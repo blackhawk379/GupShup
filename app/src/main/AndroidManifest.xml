@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.chatapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChatApplication">
+        <activity android:name=".DialogProfile"></activity>
+        <activity android:name=".UserSpecific.CreateProfileActivity" />
+        <activity android:name=".Test" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity android:name=".MajorActivity.MainActivity3" />
+        <activity android:name=".MajorActivity.MainActivity2" />
+        <activity android:name=".MajorActivity.SplashScreenActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GroupSpecific.SearchActivity" />
+        <activity android:name=".GroupSpecific.AddGroup" />
+        <activity
+            android:name=".GroupSpecific.GroupChatActivity"
+            android:label="@string/title_activity_group_chat"
+            android:theme="@style/Theme.ChatApplication.NoActionBar" />
+        <activity android:name=".GroupSpecific.GroupInfoActivity" />
+        <activity android:name=".UserSpecific.EditProfileInfo" />
+        <activity android:name=".UserSpecific.ProfileActivity" />
+        <activity android:name=".UserSpecific.ChatActivity" />
+        <activity android:name=".MajorActivity.WelcomeActivity" />
+        <activity android:name=".MajorActivity.LoginActivity" />
+        <activity android:name=".MajorActivity.RegisterActivity" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MajorActivity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ChatApplication.NoActionBar" />
+    </application>
+
+</manifest>

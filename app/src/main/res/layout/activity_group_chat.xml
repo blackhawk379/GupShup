@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@drawable/group_chat_background"
+    tools:context=".UserSpecific.ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_chatb"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/group_chat_toolbar_bg"
+        app:titleTextColor="@color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.ChatApplication.PopupOverlay"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_chatb"
+        android:layout_above="@+id/chatLinearLayoutb">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerViewb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_chatb"
+        android:layout_above="@+id/chatLinearLayout"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/chatLinearLayoutb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/etMessageBoxb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Type a message"
+            android:layout_weight="90"
+            android:layout_marginLeft="10dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btnSendButtonb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/send"
+            android:layout_weight="300"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

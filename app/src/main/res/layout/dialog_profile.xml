@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myshape"
+    tools:context=".DialogProfile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1919CC"
+        app:titleTextColor="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.ChatApplication.PopupOverlay"/>
+    <ImageView
+        android:id="@+id/imgCoverDialog"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_cover"
+        android:scaleType="centerCrop"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfileDialog"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/download"
+        app:civ_border_color="@color/white"
+        app:civ_border_overlay="true"/>
+
+    <TextView
+        android:id="@+id/txtProfileDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgProfileDialog"
+        android:fontFamily="@font/halloween_dreams_script"
+        android:layout_centerHorizontal="true"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProfileDialog"/>
+
+    <ProgressBar
+        android:id="@+id/dialogProgressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/recyclerViewDialog"
+    android:weightSum="2"
+    android:padding="0.5dp">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnToProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:strokeColor="#DCDCDC"
+        app:strokeWidth="0.5dp"
+        android:layout_weight="1"
+        android:text="Visit Profile"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnToBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_weight="1"
+        app:strokeColor="#DCDCDC"
+        app:strokeWidth="0.5dp"
+        android:text="BACK"/>
+</LinearLayout>
+
+</RelativeLayout>

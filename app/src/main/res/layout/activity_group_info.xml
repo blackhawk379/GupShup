@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/group_info_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_group_info"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1919CC"
+        app:titleTextColor="@color/white"
+        app:title="Group"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.ChatApplication.PopupOverlay"/>
+
+    <TextView
+        android:id="@+id/txtGroupInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/moutarde"
+        android:layout_below="@id/imgGroupInfo"
+        android:gravity="center"
+        android:text="Group"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgGroupInfo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/cartoon_group_background"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="5dp"/>
+    <TextView
+        android:id="@+id/txtGroupDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group Description"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/moutarde"
+        android:layout_below="@id/txtGroupInfo"/>
+    <TextView
+        android:id="@+id/txtMembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Members"
+        android:layout_below="@id/txtGroupDescription"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        style="bold"
+        android:fontFamily="@font/moutarde"
+        android:textSize="20sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupMemberRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMembers"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/btnAddMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Member"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/moutarde"/>
+
+    <ProgressBar
+        android:id="@+id/profileProgressbarMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

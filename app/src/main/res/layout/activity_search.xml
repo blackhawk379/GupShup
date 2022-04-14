@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupSpecific.SearchActivity">
+
+    <EditText
+        android:id="@+id/etSearchTextb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for Users here..."/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecyclerViewc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:id="@+id/btnAddMemberSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Add Member"
+        android:fontFamily="@font/moutarde"/>
+
+</RelativeLayout>

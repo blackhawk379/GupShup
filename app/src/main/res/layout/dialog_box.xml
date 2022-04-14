@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bx"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Not Verified"
+        android:gravity="center_horizontal"
+        android:textColor="#FF0000"
+        android:textSize="30dp"/>
+
+    <view
+        android:layout_marginTop="8dp"
+        android:layout_width="400dp"
+        android:layout_height="1dp" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:text="Email Verification Incomplete !"/>
+
+        <Button
+            android:id="@+id/btnSendAgain"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/purple_700"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Send Verification Email Again"/>
+
+    <Button
+        android:id="@+id/btnCancelVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/purple_700"
+        android:textSize="15dp"
+        android:text="Cancel"
+        android:textStyle="bold"/>
+
+</LinearLayout>

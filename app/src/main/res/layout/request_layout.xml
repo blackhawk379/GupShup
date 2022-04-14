@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFD580">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgRequestProfile"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_profile"
+        android:padding="15dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imgRequestProfile">
+        <TextView
+            android:id="@+id/txtRequestProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/lt_energy"
+            android:textSize="30sp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAcceptRequest"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/accept"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgRejectRequest"
+            android:layout_marginRight="5dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgRejectRequest"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cancel"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="375dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:layout_marginTop="90dp"/>
+
+</RelativeLayout>

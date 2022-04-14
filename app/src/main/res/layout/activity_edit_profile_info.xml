@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSpecific.EditProfileInfo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="30sp"
+        android:background="#E0E0E0"/>
+    <EditText
+        android:id="@+id/etEditUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new username"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:textSize="30sp"
+        android:background="#E0E0E0"/>
+    <EditText
+        android:id="@+id/etEditInstagram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new instagram"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textSize="30sp"
+        android:background="#E0E0E0"/>
+    <EditText
+        android:id="@+id/etEditFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new facebook id"
+        android:enabled="false"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other Website"
+        android:textSize="30sp"
+        android:background="#E0E0E0"/>
+    <EditText
+        android:id="@+id/etEditWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new website"
+        android:enabled="false"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSaveEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:text="SAVE"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"/>
+
+
+</RelativeLayout>

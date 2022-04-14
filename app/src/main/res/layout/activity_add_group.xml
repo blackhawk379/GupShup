@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40E0D0"
+    tools:context=".GroupSpecific.AddGroup"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/NewGroupToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Create New Group"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgGroupProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cartoon_group_background"
+        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/etGroupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Group Name"
+        android:padding="20dp"
+        android:fontFamily="@font/moutarde"/>
+
+
+    <EditText
+        android:id="@+id/etGroupDescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:hint="Enter Group Description..."
+        android:fontFamily="@font/moutarde"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btnCreateGroup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:text="Create Group"
+        android:fontFamily="@font/moutarde"
+        android:textSize="20sp"
+        android:padding="5dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

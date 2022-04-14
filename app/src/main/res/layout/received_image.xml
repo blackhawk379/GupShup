@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="4">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_weight="2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:padding="7dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/myshape"
+        android:src="@drawable/giphy"/>
+    </RelativeLayout>
+</LinearLayout>

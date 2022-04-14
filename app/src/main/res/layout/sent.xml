@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txtSentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/box_sent"
+            android:layout_alignParentEnd="true"
+            android:text="Sent Message"
+            android:padding="7dp"
+            android:fontFamily="@font/quantum_profit"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

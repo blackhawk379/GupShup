@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txtSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sender"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/lt_energy"/>
+        <TextView
+            android:id="@+id/txtReceivedMessage"
+            android:layout_below="@+id/txtSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/box_rec"
+            android:text="Sent Message"
+            android:padding="10dp"
+            android:fontFamily="@font/quantum_profit"
+            android:textSize="25sp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
